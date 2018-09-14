@@ -1,0 +1,72 @@
+No desktop (Criando arquivo aula.sqlite)
+
+sqlite3 aula.sqlite
+
+--------------------------------------
+(Criando uma tabela)
+
+create table agenda (nome text, telefone text);
+
+(Consultado tabelas
+
+.tables
+
+create table alunos (matricula integer, nome text, telefone text, cidade text);
+
+.tables
+
+create table produtos (codigo integer, nome text, quantidade integer);
+
+.exit
+
+(mostra qual foi o esquema da tabela)
+
+.schema 
+.t
+(inserindo na tabela agenda)
+
+insert into agenda (nome,telefone) values ("Maria","993170700");
+
+(verificando se informaçãao foi adicionand
+
+select * from agenda;
+
+insert into agenda(nome,telefone) values ("joão","33437051");
+
+-------------------------------- Tipos de dados ----------------------
+
+Text - texto "Maria"
+varchar - texto "Maria"
+string - texto "Maria"
+integer - números inteiros
+number - casas decimais
+single double real - casas decimais
+date - datas
+boolean - boleanos
+
+=======================================================================
+
+Chave primária - Campo onde torna o registro único
+
+=======================================================================
+
+///////////////////// Deletar uma tabela //////////////
+
+drop table <nome_da_tabela>;
+
+/////////////////// Mudando o nome da tabela //////////////////
+
+alter table <nome_da_tabela> rename to <nome_nova_tabela>;
+
+////////////////// Adicionando uma nova coluna ///////////////////
+
+alter table <nome_da_tabela> add estado text;
+
+
+
+
+32
+
+
+
+
