@@ -63,10 +63,19 @@ alter table <nome_da_tabela> rename to <nome_nova_tabela>;
 alter table <nome_da_tabela> add estado text;
 
 
+-------------------------- visualizando melhor Informações -----------------------------------
 
+.headers on 
 
-32
+select * from <nome_da_tabela>
 
+-------------------- restrigindo visualização de dados ----------------
+
+select * from <nome_da_tabela> where nome='Ana';
+
+/// Traz todos os nome da tabela   ///
+
+select nome from <nome_da_tabela>;
 
 
 
