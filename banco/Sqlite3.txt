@@ -77,5 +77,39 @@ select * from <nome_da_tabela> where nome='Ana';
 
 select nome from <nome_da_tabela>;
 
+// Deletar registros da tabela
+
+delete from <nome_tabela> where nome="Maria";
+
+// listar somente os campos que tem uma letra especifica
+
+select * from <nome_tabela> where <atributo> like "M%";
+
+==================================================
+
+--------------------- Ordenação -------------------
+
+select nome from <nome_tabela> order by nome;
+
+------------------- Ordenação contrária -----------
+
+select nome from <nome_tabela> order by nome DEsC;
+
+===================================================
+
+-------------------- Faixa ------------------------
+
+// seleciona os codigos maiores que 3
+
+select * from <nome_tabela> where codigo>=3;
+
+// selecionando só os codigo dentro dessa faixa
+
+select * from <nome_tabela> where codigo in (4,2,6);
+
+-----------------------------------------------------
+
+
+
 
 
