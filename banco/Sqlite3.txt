@@ -109,7 +109,34 @@ select * from <nome_tabela> where codigo in (4,2,6);
 
 -----------------------------------------------------
 
+================== Join =======================
+-------------    1° Join --------------------------------
+
+Select l.titulo, a.nome            (l.<campo>, a.<campo>)
+FROM Livros l , autor a             (<tabela> apelido , <tabela> apelido>)
+WHERE a.id = l.autor_id;
+
+----------------------- 2° Join --------------------------------------------------
+
+SELECT l.titulo, e.nome
+FROM Livros l, Editoras e
+WHERE e.id = l.editora_id;
+
+----------------------- 3° Join ------------------------------
+
+Usando 3 tabela Livros / Editoras / Autores
+
+SELECT l.titulo, a.nome, a.nome
+FROM livros l, Autores a, Editoras e
+WHERE  a.id = l.autor_id
+AND e.id = l.editor_id;
+
+----------------------------------------
 
 
 
 
+Select l.titulo, e.nome, e.estado, e.telefone
+from livro l, editora e
+WhERE e.id = l.editora_id
+AND e.estado="PR";
